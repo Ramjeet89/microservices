@@ -1,0 +1,16 @@
+# Service registers under this name
+
+# Discovery Server Access
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8083/eureka/
+      # HTTP Server (Tomcat) Port
+server: 
+  port: 8082
+
+# Disable Spring Boot's "Whitelabel" default error page, so we can use our own
+error:
+  whitelabel:
+    enabled:  false
+      
